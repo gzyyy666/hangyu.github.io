@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宁波航驭船舶科技有限公司 | 船舶自动化系统专家</title>
+  <meta name="description" content="宁波航驭船舶科技有限公司，专注于船舶自动化控制系统、智能监测与推进系统服务，为船舶提供高效、安全、可靠的技术支持。">
+  <style>
+    :root {
+      --primary-color: #0072ff;
+      --secondary-color: #00c6ff;
+      --text-color: #222;
+      --bg-color: #f8f9fa;
+    }
+    body {
+      font-family: "Segoe UI", "Microsoft Yahei", sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin: 0 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+      padding: 1rem;
+      display: inline-block;
+    }
+    nav a:hover {
+      color: var(--primary-color);
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: auto;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: var(--secondary-color);
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+    }
+    .service-card h4 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+    .about p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.05rem;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      background: #111;
+      color: #aaa;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>宁波航驭船舶科技有限公司</h1>
+    <p>船舶自动化系统 · 智能控制 · 专业服务</p >
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href=" ">关于我们</a ></li>
+      <li><a href="#services">核心服务</a ></li>
+      <li><a href="#contact">联系我们</a ></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>智慧航行，从“航驭”开始</h2>
+      <p>专注于船舶自动化系统的集成、调试与优化，为船舶提供高效、安全、智能的控制解决方案。</p >
+      <a href="#contact" class="btn">获取技术支持</a >
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h3>关于我们</h3>
+    <p>
+      宁波航驭船舶科技有限公司是一家专注于船舶自动化与智能控制系统的高新技术企业。我们致力于为船舶制造厂、船东及维修企业提供从系统设计、调试、升级改造到远程监测的全方位服务。
+    </p >
+  </section>
+
+  <section id="services">
+    <h3>核心服务</h3>
+    <div class="services">
+      <div class="service-card">
+        <h4>自动化控制系统</h4>
+        <p>包括主机、螺距、舵机、辅机等系统的集成与调试，确保船舶运行安全与高效。</p >
+      </div>
+      <div class="service-card">
+        <h4>智能监测与远程诊断</h4>
+        <p>基于数据采集与云端分析，提供实时状态监测与远程技术支持。</p >
+      </div>
+      <div class="service-card">
+        <h4>系统改造与升级</h4>
+        <p>对老旧自动化系统进行软硬件升级，提高可靠性与能效表现。</p >
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>联系我们</h3>
+    <p>地址：浙江省宁波市北仑区</p >
+    <p>电话：<a href="tel:+8657488888888">0574-8888-8888</a ></p >
+    <p>邮箱：<a href="mailto:info@hangyutech.com">info@hangyutech.com</a ></p >
+  </section>
+
+  <footer>
+    <p>© 2025 宁波航驭船舶科技有限公司 | 版权所有</p >
+  </footer>
+</body>
+</html>
