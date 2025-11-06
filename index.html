@@ -3,206 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>宁波航驭船舶科技有限公司 | 船舶自动化系统专家</title>
-  <meta name="description" content="宁波航驭船舶科技有限公司，专注于船舶自动化控制系统、智能监测与推进系统服务，为船舶提供高效、安全、可靠的技术支持。">
+  <title>宁波航驭船舶科技有限公司 | 船舶自动化与Kongsberg系统服务</title>
+  <meta name="description" content="宁波航驭船舶科技有限公司专注于Kongsberg船舶自动化系统的集成、调试与维护，服务覆盖远洋货轮、勘探海工船等类型船舶。">
   <style>
-    :root {
-      --primary-color: #0072ff;
-      --secondary-color: #00c6ff;
-      --text-color: #222;
-      --bg-color: #f8f9fa;
-    }
     body {
-      font-family: "Segoe UI", "Microsoft Yahei", sans-serif;
       margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background-color: #f9fafc;
+      color: #333;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #002c5f, #005b91);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 20px;
       letter-spacing: 1px;
     }
-    nav {
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-    }
-    nav li {
-      margin: 0 1rem;
-    }
     nav a {
+      color: white;
+      margin-left: 20px;
       text-decoration: none;
-      color: var(--text-color);
-      font-weight: 500;
-      padding: 1rem;
-      display: inline-block;
+      font-size: 15px;
     }
     nav a:hover {
-      color: var(--primary-color);
+      text-decoration: underline;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-      color: #fff;
+      background: url('https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
       text-align: center;
-      padding: 6rem 1rem;
+      padding: 130px 20px;
       position: relative;
     }
     .hero::after {
       content: "";
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.45);
+      inset: 0;
+      background: rgba(0,0,0,0.45);
     }
-    .hero-content {
+    .hero h2, .hero p {
       position: relative;
-      z-index: 2;
-      max-width: 800px;
-      margin: auto;
+      z-index: 1;
     }
     .hero h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+      font-size: 36px;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
     .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    .btn {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: #fff;
-      padding: 0.8rem 1.8rem;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background-color: var(--secondary-color);
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
     }
     section {
-      padding: 4rem 1rem;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    section h3 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      color: var(--primary-color);
+    h3 {
+      color: #004466;
+      border-left: 4px solid #0077aa;
+      padding-left: 10px;
+      margin-bottom: 25px;
     }
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 30px;
     }
     .service-card {
-      background: #fff;
-      border-radius: 6px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
     }
     .service-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
     }
-    .service-card h4 {
-      margin-top: 0;
-      color: var(--primary-color);
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
-    .about p {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.05rem;
-    }
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      color: var(--primary-color);
-      text-decoration: none;
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
+      background: #003355;
+      color: #ccc;
       text-align: center;
-      background: #111;
-      color: #aaa;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+    .contact-info {
+      line-height: 1.8;
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>宁波航驭船舶科技有限公司</h1>
-    <p>船舶自动化系统 · 智能控制 · 专业服务</p >
+    <nav>
+      <a href="#about">关于我们</a>
+      <a href="#services">核心服务</a>
+      <a href="#gallery">工程案例</a>
+      <a href="#contact">联系我们</a>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href=" ">关于我们</a ></li>
-      <li><a href="#services">核心服务</a ></li>
-      <li><a href="#contact">联系我们</a ></li>
-    </ul>
-  </nav>
-
   <section class="hero">
-    <div class="hero-content">
-      <h2>智慧航行，从“航驭”开始</h2>
-      <p>专注于船舶自动化系统的集成、调试与优化，为船舶提供高效、安全、智能的控制解决方案。</p >
-      <a href="#contact" class="btn">获取技术支持</a >
-    </div>
+    <h2>专业的船舶自动化与Kongsberg系统服务</h2>
+    <p>专注于远洋货轮与勘探海工船的自动化控制系统集成、调试与维护，助力智能航行与高效运营。</p>
   </section>
 
-  <section id="about" class="about">
+  <section id="about">
     <h3>关于我们</h3>
     <p>
-      宁波航驭船舶科技有限公司是一家专注于船舶自动化与智能控制系统的高新技术企业。我们致力于为船舶制造厂、船东及维修企业提供从系统设计、调试、升级改造到远程监测的全方位服务。
-    </p >
+      宁波航驭船舶科技有限公司是一家专注于船舶自动化与控制系统技术服务的公司。我们在
+      <strong>Kongsberg（康士伯）系统</strong> 的集成、调试、维护以及技术支持方面拥有丰富经验。
+      公司团队长期服务于远洋货轮、勘探海工船等领域，致力于为船舶提供稳定、安全、高效的自动化解决方案。
+    </p>
   </section>
 
   <section id="services">
     <h3>核心服务</h3>
     <div class="services">
       <div class="service-card">
-        <h4>自动化控制系统</h4>
-        <p>包括主机、螺距、舵机、辅机等系统的集成与调试，确保船舶运行安全与高效。</p >
+        <h4>Kongsberg系统调试与维护</h4>
+        <p>提供K-Chief、K-Thrust、K-Pos等系统的调试、检修与长期技术支持服务。</p>
       </div>
       <div class="service-card">
-        <h4>智能监测与远程诊断</h4>
-        <p>基于数据采集与云端分析，提供实时状态监测与远程技术支持。</p >
+        <h4>自动化系统集成</h4>
+        <p>覆盖主推进、舵机、锅炉及辅助设备控制系统的集成与数据接口调试。</p>
+      </div>
+      <div class="service-card">
+        <h4>远程监控与数据支持</h4>
+        <p>利用智能监控平台，实现船舶设备状态实时可视化与远程诊断。</p>
       </div>
       <div class="service-card">
         <h4>系统改造与升级</h4>
-        <p>对老旧自动化系统进行软硬件升级，提高可靠性与能效表现。</p >
+        <p>为老旧船舶提供自动化系统升级改造，提高运行可靠性与能效表现。</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="gallery">
+    <h3>工程案例与图片</h3>
+    <div class="image-grid">
+      <img src="https://images.unsplash.com/photo-1606925797300-0f5092e0c14f?auto=format&fit=crop&w=1200&q=80" alt="远洋货轮">
+      <img src="https://images.unsplash.com/photo-1558478551-1a378f63328e?auto=format&fit=crop&w=1200&q=80" alt="勘探海工船">
+      <img src="https://images.unsplash.com/photo-1581092334554-7aa3b2a63f91?auto=format&fit=crop&w=1200&q=80" alt="船舶自动化控制系统">
+    </div>
+  </section>
+
+  <section id="contact">
     <h3>联系我们</h3>
-    <p>地址：浙江省宁波市北仑区</p >
-    <p>电话：<a href="tel:+8657488888888">0574-8888-8888</a ></p >
-    <p>邮箱：<a href="mailto:info@hangyutech.com">info@hangyutech.com</a ></p >
+    <div class="contact-info">
+      <p>📞 电话：<strong>+86 574-xxxxxxx</strong></p>
+      <p>📧 邮箱：<strong>info@nbhyshiptech.com</strong></p>
+      <p>🏢 地址：<strong>宁波华宏国际中心 12-1</strong></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 宁波航驭船舶科技有限公司 | 版权所有</p >
+    <p>© 2025 宁波航驭船舶科技有限公司 | 船舶自动化与Kongsberg系统服务</p>
   </footer>
 </body>
 </html>
